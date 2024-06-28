@@ -1,0 +1,504 @@
+body {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600!important;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "YTLC" 500;
+  }
+  
+h1{
+  text-align: center;
+    
+}  
+
+
+
+h2 {
+  text-align:center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h2 > span {
+  color: #10bbbc!important;
+}
+
+h3 {
+  font-size:  1.3rem !important;
+}
+
+li {
+  list-style:none;
+}
+
+
+/*-----------------------------------*\
+  #NADBAR
+\*-----------------------------------*/
+.bg-body-tertiary {
+  background: #fdc270!important;
+}
+
+h1 {
+  background: #fdc270!important;
+  color: unset;
+  margin: 0;
+  padding: 0;
+
+}
+
+.nav-link:hover {
+ color: #10bbbc!important;
+}
+
+.navbar-brand {
+  animation: spin 10s linear; /* Inicia la animación de giro, dos vueltas en 4 segundos */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); } /* Inicia la rotación desde 0 grados */
+  100% { transform: rotate(720deg); } /* Completa la rotación volviendo a 720 grados (dos vueltas) */
+}
+
+.nav-link {
+ font-size: 1.2em;
+}
+
+.buscadorInput{
+height: 35px;
+border-radius: 10px;
+}
+
+.btn-outline-success {
+  color: #10bbbc;
+  border: solid #10bbbc 1px;
+}
+
+.btn-outline-success:hover {
+  color: #ffffff;
+  background-color: #10bbbc;
+  border: solid #10bbbc 1px;
+}
+
+
+
+/*-----------------------------------*\
+  #MENSAJE BIENVENIDA
+\*-----------------------------------*/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  border-radius: 15px;  /* Bordes redondeados */
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+
+
+
+
+
+
+/*-----------------------------------*\
+  #CARRUSEL
+\*-----------------------------------*/
+
+
+
+
+/*-----------------------------------*\
+  #QUIENES SOMOS
+\*-----------------------------------*/
+iframe {
+  width: 100%;
+}
+/*-----------------------------------*\
+  #CATEGORY
+\*-----------------------------------*/
+.card-body {
+ text-align: center;
+ padding: 5px;
+}
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive for large than 575px screen
+ */
+
+ @media (min-width: 575px) {
+  .col-lg-3 {
+    width: 50%;
+  }
+ }
+
+ /**
+ * responsive for large than 768px screen
+ */
+
+@media (min-width: 768px) {
+  .col-lg-3 {
+    width: 33%;
+  }
+
+}
+
+
+@media (min-width: 992px) {
+  .col-lg-3 {
+width: 20%;
+  }
+}
+/*-----------------------------------*\
+  #PASEADORES TABLE
+\*-----------------------------------*/
+
+.tabla-imagen {
+  width:10em;
+}
+
+.tabla-imagen:hover {
+  filter: saturate(200%);
+}
+
+
+/*-----------------------------------*\
+  #PRODUCT
+\*-----------------------------------*/
+.container {
+  display: grid;
+}
+
+.prod{
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.card-title {
+  text-decoration: none;
+}
+
+
+.product .img-cover.hover,
+.product-card .card-action-btn { display: none; }
+
+.product-card { text-align: center; }
+
+.product-card .card-banner {
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  margin-block-end: 20px;
+
+  box-shadow:
+  inset 0 -3em 3em rgba(255, 255, 255, 0.3),
+  0 0 0 2px white,
+  0.3em 0.3em 1em rgba(121, 250, 132, 0.6);
+}
+
+.product-card :is(.wrapper, .rating-wrapper) { display: flex; }
+
+.product-card .wrapper {
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: #e8e8e8;
+}
+
+.product-card .rating-wrapper {
+  gap: 2px;
+}
+
+.product-card .rating-wrapper.gray { color: unset; }
+
+.product-card .h3 {
+  margin-block: 8px 10px;
+}
+
+.product-card .card-title { transition: #10bbbc; }
+
+.product-card .card-title:is(:hover, :focus) { color: #10bbbc; }
+
+.product-card .card-price {
+  color: #fbb24d;
+}
+
+
+/*-----------------------------------*\
+  #PASEADORES
+\*-----------------------------------*/
+
+.table{
+  text-align: center;
+}
+
+.form-paseadores{
+  padding-top: 20px;
+  background-image: -webkit-linear-gradient(0deg, #d3ffc5 0%, #e0f7d7 100%);
+  background-image: -ms-linear-gradient(0deg, #d3ffc5 0%, #e0f7d7 100%);
+
+}
+
+
+/*-----------------------------------*\
+  #CONTACTO
+\*-----------------------------------*/
+
+
+.gradient-brand-color {
+  background-image: -webkit-linear-gradient(0deg, #8aafe7 0%, #add1fa 100%);
+  background-image: -ms-linear-gradient(0deg, #8aafe7 0%, #add1fa 100%);
+  color: #fff;
+}
+.contact-info__wrapper {
+  overflow: hidden;
+  border-radius: .625rem .625rem 0 0
+}
+
+@media (min-width: 1024px) {
+  .contact-info__wrapper {
+      border-radius: 0 .625rem .625rem 0;
+      padding: 5rem !important
+  }
+}
+.contact-info__list span.position-absolute {
+  left: 0
+}
+.z-index-101 {
+  z-index: 101;
+}
+.list-style--none {
+  list-style: none;
+}
+.contact__wrapper {
+  background-color: #fff;
+  border-radius: 0 0 .625rem .625rem
+}
+
+@media (min-width: 1024px) {
+  .contact__wrapper {
+      border-radius: .625rem 0 .625rem .625rem
+  }
+}
+@media (min-width: 1024px) {
+  .contact-form__wrapper {
+      padding: 5rem !important
+  }
+}
+.shadow-lg, .shadow-lg--on-hover:hover {
+  box-shadow: 0 1rem 3rem rgba(132,138,163,0.1) !important;
+}
+
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #10bbbc;
+  border: solid #10bbbc 1px;
+  }
+  
+  .btn-primary:hover {
+    color: #ffffff;
+    background-color: #118b8b;
+    border: solid #10bbbc 1px;
+  }
+
+
+
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+footer {
+  padding-top: 10px;
+}
+
+.text-reset {
+  text-decoration: none!important;
+}
+
+.text-reset:hover {
+  color: #10bbbc!important;
+}
+
+.fab:hover {
+ color: #10bbbc;
+}
+
+a[href^="mailto:"] {
+  color: unset;
+  text-decoration: none; 
+}
+
+/*-----------------------------------*\
+  #Formulario Registro
+\*-----------------------------------*/
+
+
+.signupFrm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+.crudFrm {
+  display:grid;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+
+
+.form {
+  background-color: white;
+  width: 400px;
+  border-radius: 8px;
+  padding: 20px 40px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+}
+
+.title {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.inputContainer {
+  position: relative;
+  height: 45px;
+  width: 90%;
+  margin-bottom: 17px;
+}
+
+/* Style the inputs */
+
+.input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #DADCE0;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  z-index: 1;
+}
+
+/* ocultar el placeholder texto (a) */
+
+::placeholder {
+  color: transparent;
+}
+
+/* estilo de los labels */
+
+.label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 0 4px;
+  background-color: white;
+  color: #DADCE0;
+  font-size: 16px;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+.submitBtn {
+  display: block;
+  margin-left: auto;
+  padding: 15px 30px;
+  border: none;
+  background-color: #10BBBC;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.submitBtn:hover {
+  background-color: #058787;
+  transform: translateY(-2px);
+}
+
+.submitBtnCrud {
+  display: inline;
+  margin-left: auto;
+  padding: 15px 20px;
+  border: none;
+  background-color: #10BBBC;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.submitBtnCrud:hover {
+  background-color: #058787;
+  transform: translateY(-2px);
+}
+
+
+.input:focus + .label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+  color: #10BBBC;
+}
+.input:focus {
+  border: 2px solid #10BBBC;
+}
+
+.input:not(:placeholder-shown)+ .label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+}
+
