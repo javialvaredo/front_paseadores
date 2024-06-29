@@ -16,9 +16,10 @@ const handleFormSubmit = async (action) => {
   const userId = document.querySelector("#userId").value;
   if (userId==="") {
     alert('Compelar ID');
-    reset()
+    formCrud.reset();
+    return
   }
-
+  
   switch (action) {
     case 'buscar':
       await buscarUsuario(userId);

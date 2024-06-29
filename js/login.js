@@ -67,7 +67,8 @@ document.addEventListener("DOMContentLoaded", () => {
         
         console.log(`Datos recibidos del servidor: Status = ${respuesta.status} ${data.message}, ${data.redirectUrl} ${data.message}`);
         alert(data.message)
-        window.location.href = window.location.href = 'https://front-paseadores.netlify.app/crud.html'
+        window.location.href = 'https://front-paseadores.netlify.app/crud.html'
+        //window.location.href = 'http://localhost:5500/crud.html'
                        
       } else {
         console.error(`Error al enviar el formulario, Status:  ${respuesta.status} ${data.message}`);
