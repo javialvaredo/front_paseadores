@@ -43,7 +43,7 @@ const buscarUsuario = async (id) => {
     });
     console.log(response);
     if (!response.ok) {
-      if (response.status === 404) {
+      if (response.status == 404) {
         alert('Usuario inexistente');
         formCrud.reset();
         
