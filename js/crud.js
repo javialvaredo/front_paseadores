@@ -14,6 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const handleFormSubmit = async (action) => {
   const userId = document.querySelector("#userId").value;
+  if (userId==="") {
+    alert('Compelar ID');
+    reset()
+  }
 
   switch (action) {
     case 'buscar':
@@ -36,12 +40,20 @@ const buscarUsuario = async (id) => {
         "Accept": "application/json"
       }
     });
-
+    console.log(response);
     if (!response.ok) {
+      if (response.status === 404) {
+        alert('Usuario inexistente');
+        formCrud.reset();
+        
+        throw new Error(`Usuario inexistente: ${response.statusText}`);
+      }       
+
       throw new Error(`Error en la solicitud: ${response.statusText}`);
     }
 
     const datosUsuario = await response.json();
+        
     console.log("Datos del usuario:", datosUsuario, datosUsuario.nombre, datosUsuario.apellido, datosUsuario.usuario);
     llenarFormulario(datosUsuario)
     // Procesar los datos del usuario 
