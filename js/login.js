@@ -1,4 +1,6 @@
-import { SERVER_URL } from './config.js';
+import { SERVER_URL, SERVER_FRONT } from './config.js';
+
+
 
 const mensajeAlerta = "Por favor, completar todos los campos obligatorios";
 
@@ -67,8 +69,10 @@ document.addEventListener("DOMContentLoaded", () => {
         
         console.log(`Datos recibidos del servidor: Status = ${respuesta.status} ${data.message}, ${data.redirectUrl} ${data.message}`);
         alert(data.message)
-        window.location.href = 'https://front-paseadores.netlify.app/crud.html'
-        //window.location.href = 'http://localhost:5500/crud.html'
+        //window.location.href = `${SERVER_FRONT}/crud.html`
+        window.location.href = `${SERVER_FRONT}/paseadores_log.html`
+       
+
                        
       } else {
         console.error(`Error al enviar el formulario, Status:  ${respuesta.status} ${data.message}`);
